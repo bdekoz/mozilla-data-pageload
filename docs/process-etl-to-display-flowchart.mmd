@@ -1,0 +1,10 @@
+flowchart TB
+	  start --> step1[query redash for successfully completed tasks for android/linux/win that have pageload resutls for amason, etc]
+	  step1 --> step2[export query every day]
+	  step2 --> step3[slurp in exported json and match test date to today's date, get task id]
+	  step3 --> step4[use task_id to get artifact]
+	  step4 --> step5[save browsertime-results.tgz artifact to github]
+	  step5 --> step6a[extract browsertime results JSON to CSV]
+	  step5 --> step6b[find video, power iteration that most closely matches median results]
+	  step6a --> step7[use results CSV and media files to make glyph]
+	  step7 --> step8[render glyph on github pages]
