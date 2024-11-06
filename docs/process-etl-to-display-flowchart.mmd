@@ -1,6 +1,6 @@
 flowchart TB
 	  start --> step1[query redash for successfully completed tasks for android/linux/win that have pageload results for amazon, etc]
-	  step1 --> step2[export query every day]
+	  step1 --> step2[export these queries everyday as JSON with API key]
 	  step2 --> step3[slurp in exported json and match test date to today's date, get task id]
 	  step3 --> step4[use task_id to get artifact]
 	  step4 --> step5[save browsertime-results.tgz artifact to github]
