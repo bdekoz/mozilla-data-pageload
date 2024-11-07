@@ -27,5 +27,3 @@ curl --fail --silent --show-error "${WIN_URLF}" --output "$ISODATE-win11-firefox
 curl --fail --silent --show-error "${DROID_URLF}" --output "$ISODATE-android-firefox.json";
 
 
-#task_id is LrntcFBZSBW0fxJXJIlTxg
-#https://firefox-ci-tc.services.mozilla.com/api/queue/v1/task/LrntcFBZSBW0fxJXJIlTxg/runs/0/artifacts/public/test_info/browsertime-results.tgz
