@@ -6,7 +6,7 @@ ISODATE=`date --iso`
 
 LINUX_URLC="https://sql.telemetry.mozilla.org/api/queries/103481/results.json?api_key=gGZtKjMWvDxX1ZowDO1ylPLpb7geLfydJOfPwacA"
 WIN_URLC="https://sql.telemetry.mozilla.org/api/queries/103544/results.json?api_key=77QUfZNd45ckUuoTDv9thesptPNWyE2KC2rzdVTz"
-DROID_URLC="https://sql.telemetry.mozilla.org/api/queries/103544/results.json?api_key=77QUfZNd45ckUuoTDv9thesptPNWyE2KC2rzdVTz"
+DROID_URLC="https://sql.telemetry.mozilla.org/api/queries/103543/results.csv?api_key=Pamth1ZDV82obmrj1BEiVcsFPrSVUy1fFK91FERE"
 
 curl --fail --silent --show-error "${LINUX_URLC}" --output "$ISODATE-linux-chrome.json";
 
