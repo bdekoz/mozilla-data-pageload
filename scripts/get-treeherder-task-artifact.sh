@@ -30,4 +30,14 @@ get_artifact_and_unpack() {
 }
 
 
-get_artifact_and_unpack "linux-firefox-amazon" "LrntcFBZSBW0fxJXJIlTxg"
+#get_artifact_and_unpack "linux-firefox-amazon" "LrntcFBZSBW0fxJXJIlTxg"
+
+# 2024-11-06
+# revision: 66c06d5d735b9b7d7ccb0e85f326c28f7d19dd7d
+#get_artifact_and_unpack "android-chrome-amazon" ""
+#get_artifact_and_unpack "android-firefox-amazon" ""
+#get_artifact_and_unpack "linux-chrome-amazon" ""
+#get_artifact_and_unpack "linux-firefox-amazon" ""
+#get_artifact_and_unpack "win11-chrome-amazon" ""
+#get_artifact_and_unpack "win11-firefox-amazon" ""
+
