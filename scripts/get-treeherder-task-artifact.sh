@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #ISODATE=`date --iso`
-ISODATE=2024-11-06
+ISODATE=2024-11-13
 
 get_artifact_and_unpack() {
     TPLATFORM="$1"
@@ -30,14 +30,12 @@ get_artifact_and_unpack() {
 }
 
 
-#get_artifact_and_unpack "linux-firefox-amazon" "LrntcFBZSBW0fxJXJIlTxg"
-
-# 2024-11-06
-# revision: 66c06d5d735b9b7d7ccb0e85f326c28f7d19dd7d
-#get_artifact_and_unpack "android-chrome-amazon" ""
-#get_artifact_and_unpack "android-firefox-amazon" ""
-#get_artifact_and_unpack "linux-chrome-amazon" ""
-#get_artifact_and_unpack "linux-firefox-amazon" ""
-#get_artifact_and_unpack "win11-chrome-amazon" ""
-#get_artifact_and_unpack "win11-firefox-amazon" ""
+# 2024-11-13
+# revision: 723946b9a47990aa6253585366bb18863de4df33
+get_artifact_and_unpack "android-chrome-amazon" "TZYbceDiQmi9QFRD-p5SFA"
+get_artifact_and_unpack "android-firefox-amazon" "SRBmXxxqQgqdh93HmOnarA"
+get_artifact_and_unpack "linux-chrome-amazon" ""
+get_artifact_and_unpack "linux-firefox-amazon" "TL0sHKldQ1e_yCOZnRqwAQ"
+get_artifact_and_unpack "win11-chrome-amazon" "Oa70G72URmi3IWnVPCBjfA"
+get_artifact_and_unpack "win11-firefox-amazon" "HJZ7SBoBT_Cm27D5w05_3g"
 
