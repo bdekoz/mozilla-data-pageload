@@ -52,7 +52,7 @@ def generate_video_thumbnail_partition_n(ivideo, totaln):
         os.system(fcommand)
 
 
-# intervaln is in seconds, so 500 ms would be .5         
+# intervaln is in seconds, so 500 ms would be .5
 def generate_video_thumbnail_interval(ivideo, intervaln):
     cspace = ' '
     totaln = int(dursec / intervaln)
@@ -66,11 +66,11 @@ def generate_video_thumbnail_interval(ivideo, intervaln):
             timecodemin = int(timecoden/60)
             timecodesec = timecoden - timecodemin;
             thumbflag = "-ss 00:" + str(timecodemin) + ":" + str(timecodesec) + cspace + "-frames:v 1"
-        ofname = f"{filenamebase}_{timecoden}.png"
+        ofname = f"{filenamebase}_{timecoden:.2f}.png"
         fcommand="ffmpeg -i " + ifile + cspace + thumbflag + cspace + ofname
-        print(str(timecoden) + cspace + fcommand)
-        #os.system(fcommand)
-        
+        #print(str(timecoden) + cspace + fcommand)
+        os.system(fcommand)
+
 
 
 #generate_video_thumbnail_partition_n(ifile, 12)
