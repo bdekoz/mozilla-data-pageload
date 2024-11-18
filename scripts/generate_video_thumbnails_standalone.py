@@ -24,7 +24,7 @@ dursec=video_duration(ifile)
 print("duration in seconds: ", dursec)
 
 # serialiaztion dictionary for json
-thumbnail_dict = {}
+filmstrip_dict = {}
 
 # Extract frame from video stream at specified points.
 # Either pick a set number of result thumbnails (say 12) spaced discretely over entire duration
@@ -38,7 +38,7 @@ thumbnail_dict = {}
 
 #ffmpeg -i input.flv -ss 00:00:14.435 -frames:v 1 out.png
 
-def generate_video_thumbnail_partition_n(ivideo, totaln):
+def generate_video_filmstrip_partition_n(ivideo, totaln):
     cspace = ' '
     for i in range(totaln):
         print(i)
@@ -53,11 +53,11 @@ def generate_video_thumbnail_partition_n(ivideo, totaln):
         fcommand="ffmpeg -i " + ifile + cspace + thumbflag + cspace + ofname
         #print(str(timecoden) + cspace + fcommand)
         os.system(fcommand)
-        thumbnail_dict[str(i)] = ofname
+        filmstrip_dict[str(i)] = ofname
 
 
 # intervaln is in seconds, so 500 ms would be .5
-def generate_video_thumbnail_interval(ivideo, intervaln):
+def generate_video_filmstrip_interval(ivideo, intervaln):
     cspace = ' '
     totaln = int(dursec / intervaln)
     offset = intervaln;
@@ -75,7 +75,7 @@ def generate_video_thumbnail_interval(ivideo, intervaln):
         fcommand="ffmpeg -i " + ifile + cspace + thumbflag + cspace + ofname
         #print(str(timecoden) + cspace + fcommand)
         os.system(fcommand)
-        thumbnail_dict[timecodestr] = ofname
+        filmstrip_dict[timecodestr] = ofname
 
 
 def serialize_data(ivideo, tdict, ofname):
@@ -84,7 +84,7 @@ def serialize_data(ivideo, tdict, ofname):
     with open(ofname, 'w') as f:
         json.dump(vdict, f, indent=2)
 
-#generate_video_thumbnail_partition_n(ifile, 12)
-generate_video_thumbnail_interval(ifile, 0.25)
+#generate_video_filmstrip_partition_n(ifile, 12)
+generate_video_filmstrip_interval(ifile, 0.25)
 
-serialize_data(ifile, thumbnail_dict, filenamebase + ".json")
+serialize_data(ifile, filmstrip_dict, filenamebase + "-filmstrip.json")
