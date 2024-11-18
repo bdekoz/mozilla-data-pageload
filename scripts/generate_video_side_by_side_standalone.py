@@ -118,7 +118,7 @@ def build_side_by_side(base_video, new_video, base_ind, new_ind, output_dir, fil
             apath.unlink()
 
     overlay_text = (
-        "fps=fps=60,drawtext=text={}\\\\ :fontsize=(h/20):fontcolor=black:y=10:"
+        "fps=fps=60,drawtext=text={}\\\\ :fontsize=(h/30):fontcolor=black:y=10:"
         + "timecode=00\\\\:00\\\\:00\\\\:00:rate=60*1000/1001:fontcolor=white:x=(w-tw)/2:"
         + "y=10:box=1:boxcolor=0x00000000@1[vid]"
     )
@@ -160,7 +160,7 @@ def build_side_by_side(base_video, new_video, base_ind, new_ind, output_dir, fil
             "-i",
             str(before_rs_vid),
             "-filter_complex",
-            overlay_text.format("BEFORE"),
+            overlay_text.format("firefox"),
         ]
         + common_options
         + [str(before_vid)]
@@ -171,7 +171,7 @@ def build_side_by_side(base_video, new_video, base_ind, new_ind, output_dir, fil
             "-i",
             str(after_rs_vid),
             "-filter_complex",
-            overlay_text.format("AFTER"),
+            overlay_text.format("chrome"),
         ]
         + common_options
         + [str(after_vid)]
