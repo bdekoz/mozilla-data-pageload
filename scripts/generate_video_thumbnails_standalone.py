@@ -6,6 +6,7 @@
 import sys
 import os
 import subprocess
+import json
 from pathlib import Path
 
 # setup input file, output file naming conventions
@@ -22,6 +23,8 @@ def video_duration(ivideo):
 dursec=video_duration(ifile)
 print("duration in seconds: ", dursec)
 
+# serialiaztion dictionary for json
+thumbnail_dict = {}
 
 # Extract frame from video stream at specified points.
 # Either pick a set number of result thumbnails (say 12) spaced discretely over entire duration
@@ -50,6 +53,7 @@ def generate_video_thumbnail_partition_n(ivideo, totaln):
         fcommand="ffmpeg -i " + ifile + cspace + thumbflag + cspace + ofname
         #print(str(timecoden) + cspace + fcommand)
         os.system(fcommand)
+        thumbnail_dict[str(i)] = ofname
 
 
 # intervaln is in seconds, so 500 ms would be .5
@@ -66,12 +70,21 @@ def generate_video_thumbnail_interval(ivideo, intervaln):
             timecodemin = int(timecoden/60)
             timecodesec = timecoden - timecodemin;
             thumbflag = "-ss 00:" + str(timecodemin) + ":" + str(timecodesec) + cspace + "-frames:v 1"
-        ofname = f"{filenamebase}_{timecoden:.2f}.png"
+        timecodestr = f"{timecoden:.2f}"
+        ofname = f"{filenamebase}_{timecodestr}.png"
         fcommand="ffmpeg -i " + ifile + cspace + thumbflag + cspace + ofname
         #print(str(timecoden) + cspace + fcommand)
         os.system(fcommand)
+        thumbnail_dict[timecodestr] = ofname
 
 
+def serialize_data(ivideo, tdict, ofname):
+    vdict = {"video" : ivideo }
+    vdict["filmstrip"] = tdict
+    with open(ofname, 'w') as f:
+        json.dump(vdict, f, indent=2)
 
 #generate_video_thumbnail_partition_n(ifile, 12)
 generate_video_thumbnail_interval(ifile, 0.25)
+
+serialize_data(ifile, thumbnail_dict, filenamebase + ".json")
