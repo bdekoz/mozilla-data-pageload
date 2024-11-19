@@ -38,6 +38,7 @@ filmstrip_dict = {}
 
 #ffmpeg -i input.flv -ss 00:00:14.435 -frames:v 1 out.png
 
+# partition number is integer of total segments t
 def generate_video_filmstrip_partition_n(ivideo, totaln):
     cspace = ' '
     for i in range(totaln):
@@ -56,7 +57,7 @@ def generate_video_filmstrip_partition_n(ivideo, totaln):
         filmstrip_dict[str(i)] = ofname
 
 
-# intervaln is in seconds, so 500 ms would be .5
+# intervaln is floating point of seconds or partial seconds (500 ms would be .5)
 def generate_video_filmstrip_interval(ivideo, intervaln):
     cspace = ' '
     totaln = int(dursec / intervaln)
