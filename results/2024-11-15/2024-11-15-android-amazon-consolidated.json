@@ -54,6 +54,24 @@
       "11.75": "2024-11-15-android-firefox-amazon_11.75.png",
       "12.00": "2024-11-15-android-firefox-amazon_12.00.png",
       "12.25": "2024-11-15-android-firefox-amazon_12.25.png"
+    },
+    "metrics": {
+      "paintTimingfirst-contentful-paint": "393",
+      "largestContentfulPaintloadTime": "503",
+      "largestContentfulPaintrenderTime": "521",
+      "lcp_element": "\"\"https://m.media-amazon.com/images/I/61GCKHqbcxL._AC_SX444_SY639_QL65_.jpg\"\"",
+      "redirectStart": "0",
+      "redirectEnd": "0",
+      "fetchStart": "-2",
+      "domainLookupStart": "9",
+      "connectStart": "10",
+      "requestStart": "16",
+      "responseStart": "21",
+      "domInteractive": "432",
+      "domComplete": "723",
+      "loadEventEnd": "728",
+      "SpeedIndex": "507",
+      "VisualComplete85": "567"
     }
   },
   "chrome": {
@@ -90,6 +108,24 @@
       "7.25": "2024-11-15-android-chrome-amazon_7.25.png",
       "7.50": "2024-11-15-android-chrome-amazon_7.50.png",
       "7.75": "2024-11-15-android-chrome-amazon_7.75.png"
+    },
+    "metrics": {
+      "paintTimingfirst-contentful-paint": "519",
+      "largestContentfulPaintloadTime": "0",
+      "largestContentfulPaintrenderTime": "519",
+      "lcp_element": "\"\"<h2 class='a-size-mini a-spacing-none a-color-base s-line-clamp-3'></h2>\"\"",
+      "redirectStart": "0",
+      "redirectEnd": "0",
+      "fetchStart": "6",
+      "domainLookupStart": "6",
+      "connectStart": "12",
+      "requestStart": "67",
+      "responseStart": "79",
+      "domInteractive": "463",
+      "domComplete": "631",
+      "loadEventEnd": "638",
+      "SpeedIndex": "501",
+      "VisualComplete85": "512"
     }
   }
 }
