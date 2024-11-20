@@ -7,13 +7,13 @@ flowchart TB
 	  step5 --> step6a["extract metrics from browsertime json (generate-browsertime-metrics.sh)"]
 	  subgraph extract
 	  step6a --> step6b["find test iteration that most closely matches median results, use it to select video and data files"]
-	  step6b --> step7a["make side-by-side video (generate-video-side-by-side-wrapper.sh)"]
 	  end
+	  step6b --> step7a["make side-by-side video (generate-video-side-by-side-wrapper.sh)"]
 	  subgraph transform
 	  step7a --> step7b["make filmstrip (generate_video_thumbnails_standalone.py)"]
 	  step7b --> step7c["make aggregate json with all details (generate-aggregate-json.sh)"]
-	  step7c --> step8["checkin transformed objects into github"]
 	  end
+	  step7c --> step8["checkin transformed objects into github"]
 	  step8 --> step9["use aggregate json and chartjs to make github pages"]
 	  step9 --> step10["complete for other URLS in test set like wikipedia, cnn, instagram"]
 	  step10 --> step11["finish"]
