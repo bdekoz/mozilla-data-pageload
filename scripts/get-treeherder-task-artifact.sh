@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #ISODATE=`date --iso`
-ISODATE=2024-11-15
+ISODATE=2024-11-20
 
 ITERATIONFINDER=$MOZPERFAX/bin/moz-perf-x-extract.browsertime_iteration.exe
 
@@ -61,17 +61,18 @@ get_artifact_and_unpack() {
 #get_artifact_and_unpack "win11-chrome-amazon" "Oa70G72URmi3IWnVPCBjfA"
 #get_artifact_and_unpack "win11-firefox-amazon" "HJZ7SBoBT_Cm27D5w05_3g"
 
+# lastest platform matches as of 2024-11-19
+
 # 2024-11-15T09:34:47Z
 # revision: f918befd42312cdf96757bea838a55620ce4cb7f
 # pstanciu@mozilla.com, id(482802694), push_id(1533676)
-get_artifact_and_unpack "android-chrome-amazon" "AiNhygfUTBC1JigtAFejKg"
-get_artifact_and_unpack "android-firefox-amazon" "Janmma67QIiH7tIK-RXgyQ"
+#get_artifact_and_unpack "android-amazon-chrome" "SbxKRIQhTQK7bNLVazz56A"
+#get_artifact_and_unpack "android-amazon-firefox" "TmBexU_jTky6uTRUnikYsw"
 
-
-#get_artifact_and_unpack "linux-chrome-amazon" ""
-#get_artifact_and_unpack "linux-firefox-amazon" ""
-
-# revision: 563a9354bae0035e1cf01227bc28be4a80a7d5e5
-# 2024-11-15 17:15 aglavic@mozilla.com id(482,873,628) push_id(1,534,036)
-#get_artifact_and_unpack "win11-chrome-amazon" "FzHE0G0XTMSAj0rUpJzLmg"
-#get_artifact_and_unpack "win11-firefox-amazon" ""
+# 2024-11-20T01:16:56Z
+# revision c03ba0b165f20fa7694f8ec94ad24134407b45a9
+# kshampur@mozilla.com
+get_artifact_and_unpack "linux-amazon-chrome" "LAkRMFQeRlO_nGBz7NGMSg"
+get_artifact_and_unpack "linux-amazon-firefox" "AngA8HVnTCWnP4Jq3fdY4Q"
+get_artifact_and_unpack "win11-amazon-chrome" "ZSBBjQdFTUu1cccBNdZFrA"
+get_artifact_and_unpack "win11-amazon-firefox" "FqLOMW9MTx-1BRFJVCQdYQ"

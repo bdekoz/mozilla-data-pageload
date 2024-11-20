@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # run like:
-# generate_consolidated_json_by_date.py 1 2 3 4 5
+# generate_aggregate_json_by_date.py 1 2 3 4 5
 
 import sys
 import os
@@ -21,7 +21,7 @@ cjsnmetric = sys.argv[7];
 
 # Consolidate per-date and platform data files into one file.
 # json for filmstrips, json for metrics
-def serialize_consolidated(tnameplatform, date, sbys_video,
+def serialize_aggregate(tnameplatform, date, sbys_video,
                            flmfirefoxj, mtrxfirefoxj, flmchromej, mtrxchromej):
     vdict = {"test" : tnameplatform }
     vdict["date"] = date
@@ -38,9 +38,9 @@ def serialize_consolidated(tnameplatform, date, sbys_video,
           chromem_dict = json.load(jcm)
           chrome_dict["metrics"] = chromem_dict
       vdict["chrome"] = chrome_dict
-    ofname = date + "-" + tnameplatform + "-" + "consolidated.json"
+    ofname = date + "-" + tnameplatform + "-" + "aggregate.json"
     with open(ofname, 'w') as of:
         json.dump(vdict, of, indent=2)
 
-serialize_consolidated(testnp, datestr, sxsvi, fjsnfilm, fjsnmetric,
+serialize_aggregate(testnp, datestr, sxsvi, fjsnfilm, fjsnmetric,
                        cjsnfilm, cjsnmetric)
