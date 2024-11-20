@@ -1,0 +1,19 @@
+{
+    "paintTimingfirst-contentful-paint": "474",
+    "largestContentfulPaintloadTime": "0",
+    "largestContentfulPaintrenderTime": "474",
+    "lcp_element": "\"\"<h2 class='a-size-mini a-spacing-none a-color-base s-line-clamp-3'></h2>\"\"",
+    "redirectStart": "0",
+    "redirectEnd": "0",
+    "fetchStart": "6",
+    "domainLookupStart": "6",
+    "connectStart": "11",
+    "requestStart": "49",
+    "responseStart": "58",
+    "domInteractive": "437",
+    "domComplete": "589",
+    "loadEventEnd": "597",
+    "SpeedIndex": "455",
+    "VisualComplete85": "446",
+    "iteration_closest_to_median_lcp": 6
+}
