@@ -304,9 +304,9 @@ tr:hover {
       const filteredData = window.data.filter(row => row.test === metric && row.platform === platform);
       const metricData = filteredData[0];
 
-      const chromeData = metricData.data.chrome.visualMetrics[type+'Progress'];
-      const firefoxData = metricData.data.firefox.visualMetrics[type+'Progress'];
-      const filmstripTimestamps = Object.keys(metricData.data.chrome.filmstrip).map(Number); // Convert to numbers
+      const chromeData = metricData.chrome.metrics[type+'Progress'];
+      const firefoxData = metricData.firefox.metrics[type+'Progress'];
+      const filmstripTimestamps = Object.keys(metricData.chrome.filmstrip).map(Number); // Convert to numbers
 
       // Interpolation helper
       const interpolateVisualProgress = (timestamps, visualProgress) => {
@@ -489,7 +489,7 @@ tr:hover {
       filmstripElement.innerHTML = '';
 
       // Get the list of timestamps (assumes Chrome and Firefox have the same timestamps)
-      const timestamps = Object.keys(filmstripData.data.chrome.filmstrip);
+      const timestamps = Object.keys(filmstripData.chrome.filmstrip);
 
       timestamps.forEach(timestamp => {
 	// Create a container for each timestamp
@@ -504,7 +504,7 @@ tr:hover {
 
 	// Create Firefox image element
 	const firefoxImage = document.createElement('img');
-	firefoxImage.src = filmstripData.data.firefox.filmstrip[timestamp];
+	firefoxImage.src = filmstripData.firefox.filmstrip[timestamp];
 	firefoxImage.alt = `Firefox Frame at ${timestamp} ms`;
 	firefoxImage.className = 'filmstrip-image';
 	timestampContainer.appendChild(firefoxImage);
@@ -517,7 +517,7 @@ tr:hover {
 
 	// Create Chrome image element
 	const chromeImage = document.createElement('img');
-	chromeImage.src = filmstripData.data.chrome.filmstrip[timestamp];
+	chromeImage.src = filmstripData.chrome.filmstrip[timestamp];
 	chromeImage.alt = `Chrome Frame at ${timestamp} ms`;
 	chromeImage.className = 'filmstrip-image';
 	timestampContainer.appendChild(chromeImage);
@@ -561,11 +561,11 @@ tr:hover {
 
   function displayAllContent() {
       displayTable();
-//      displayVideos();
-//      displayFilmstrips();
-//      displayVisualProgress('SpeedIndex');
-//      displayVisualProgress('PerceptualSpeedIndex');
-//      displayVisualProgress('ContentfulSpeedIndex');
+      displayVideos();
+      displayFilmstrips();
+      displayVisualProgress('SpeedIndex');
+      displayVisualProgress('PerceptualSpeedIndex');
+      displayVisualProgress('ContentfulSpeedIndex');
     }
 
   function loadData(dataUrl) {
