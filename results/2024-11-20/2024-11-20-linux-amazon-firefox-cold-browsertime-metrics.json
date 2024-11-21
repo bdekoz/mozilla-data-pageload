@@ -1,5 +1,5 @@
 {
-    "paintTimingfirst-contentful-paint": "616",
+    "fcp": "616",
     "largestContentfulPaintloadTime": "591",
     "largestContentfulPaintrenderTime": "629",
     "lcp_element": "\"\"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/d98464a8-6f13-4a70-a729-1ab1a3b7c18b._CR0,0,1200,628_SX430_QL70_.jpg\"\"",
@@ -17,163 +17,163 @@
     "VisualComplete85": "800",
     "PerceptualSpeedIndexProgress": [
         {
-            "timestamp": "0",
+            "timestamp": "0.000000",
             "percent": "0"
         },
         {
-            "timestamp": "640",
+            "timestamp": "0.640000",
             "percent": "86"
         },
         {
-            "timestamp": "680",
+            "timestamp": "0.680000",
             "percent": "88"
         },
         {
-            "timestamp": "880",
+            "timestamp": "0.880000",
             "percent": "97"
         },
         {
-            "timestamp": "960",
+            "timestamp": "0.960000",
             "percent": "98"
         },
         {
-            "timestamp": "1000",
+            "timestamp": "1.000000",
             "percent": "98"
         },
         {
-            "timestamp": "1440",
+            "timestamp": "1.440000",
             "percent": "99"
         },
         {
-            "timestamp": "1480",
+            "timestamp": "1.480000",
             "percent": "99"
         },
         {
-            "timestamp": "1640",
+            "timestamp": "1.640000",
             "percent": "99"
         },
         {
-            "timestamp": "1760",
+            "timestamp": "1.760000",
             "percent": "99"
         },
         {
-            "timestamp": "1840",
+            "timestamp": "1.840000",
             "percent": "99"
         },
         {
-            "timestamp": "1920",
+            "timestamp": "1.920000",
             "percent": "100"
         },
         {
-            "timestamp": "1960",
+            "timestamp": "1.960000",
             "percent": "100"
         }
     ],
     "ContentfulSpeedIndexProgress": [
         {
-            "timestamp": "0",
+            "timestamp": "0.000000",
             "percent": "0"
         },
         {
-            "timestamp": "640",
+            "timestamp": "0.640000",
             "percent": "93"
         },
         {
-            "timestamp": "680",
+            "timestamp": "0.680000",
             "percent": "96"
         },
         {
-            "timestamp": "880",
+            "timestamp": "0.880000",
             "percent": "97"
         },
         {
-            "timestamp": "960",
+            "timestamp": "0.960000",
             "percent": "97"
         },
         {
-            "timestamp": "1000",
+            "timestamp": "1.000000",
             "percent": "97"
         },
         {
-            "timestamp": "1440",
+            "timestamp": "1.440000",
             "percent": "98"
         },
         {
-            "timestamp": "1480",
+            "timestamp": "1.480000",
             "percent": "99"
         },
         {
-            "timestamp": "1640",
+            "timestamp": "1.640000",
             "percent": "99"
         },
         {
-            "timestamp": "1760",
+            "timestamp": "1.760000",
             "percent": "99"
         },
         {
-            "timestamp": "1840",
+            "timestamp": "1.840000",
             "percent": "100"
         },
         {
-            "timestamp": "1920",
+            "timestamp": "1.920000",
             "percent": "100"
         },
         {
-            "timestamp": "1960",
+            "timestamp": "1.960000",
             "percent": "100"
         }
     ],
-    "VisualProgress": [
+    "SpeedIndexProgress": [
         {
-            "timestamp": "0",
+            "timestamp": "0.000000",
             "percent": "0"
         },
         {
-            "timestamp": "640",
+            "timestamp": "0.640000",
             "percent": "58"
         },
         {
-            "timestamp": "680",
+            "timestamp": "0.680000",
             "percent": "58"
         },
         {
-            "timestamp": "880",
+            "timestamp": "0.880000",
             "percent": "94"
         },
         {
-            "timestamp": "960",
+            "timestamp": "0.960000",
             "percent": "95"
         },
         {
-            "timestamp": "1000",
+            "timestamp": "1.000000",
             "percent": "96"
         },
         {
-            "timestamp": "1440",
+            "timestamp": "1.440000",
             "percent": "96"
         },
         {
-            "timestamp": "1480",
+            "timestamp": "1.480000",
             "percent": "96"
         },
         {
-            "timestamp": "1640",
+            "timestamp": "1.640000",
             "percent": "96"
         },
         {
-            "timestamp": "1760",
+            "timestamp": "1.760000",
             "percent": "96"
         },
         {
-            "timestamp": "1840",
+            "timestamp": "1.840000",
             "percent": "98"
         },
         {
-            "timestamp": "1920",
+            "timestamp": "1.920000",
             "percent": "98"
         },
         {
-            "timestamp": "1960",
+            "timestamp": "1.960000",
             "percent": "100"
         }
     ]

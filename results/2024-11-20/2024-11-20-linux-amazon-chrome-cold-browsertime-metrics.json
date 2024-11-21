@@ -1,5 +1,5 @@
 {
-    "paintTimingfirst-contentful-paint": "304",
+    "fcp": "304",
     "largestContentfulPaintloadTime": "0",
     "largestContentfulPaintrenderTime": "333",
     "lcp_element": "\"\"<div id='nav-xshop' class='nav-progressive-content'></div>\"\"",
@@ -17,91 +17,91 @@
     "VisualComplete85": "500",
     "PerceptualSpeedIndexProgress": [
         {
-            "timestamp": "0",
+            "timestamp": "0.000000",
             "percent": "0"
         },
         {
-            "timestamp": "334",
+            "timestamp": "0.334000",
             "percent": "71"
         },
         {
-            "timestamp": "367",
+            "timestamp": "0.367000",
             "percent": "78"
         },
         {
-            "timestamp": "400",
+            "timestamp": "0.400000",
             "percent": "85"
         },
         {
-            "timestamp": "434",
+            "timestamp": "0.434000",
             "percent": "93"
         },
         {
-            "timestamp": "467",
+            "timestamp": "0.467000",
             "percent": "99"
         },
         {
-            "timestamp": "500",
+            "timestamp": "0.500000",
             "percent": "100"
         }
     ],
     "ContentfulSpeedIndexProgress": [
         {
-            "timestamp": "0",
+            "timestamp": "0.000000",
             "percent": "0"
         },
         {
-            "timestamp": "334",
+            "timestamp": "0.334000",
             "percent": "79"
         },
         {
-            "timestamp": "367",
+            "timestamp": "0.367000",
             "percent": "79"
         },
         {
-            "timestamp": "400",
+            "timestamp": "0.400000",
             "percent": "79"
         },
         {
-            "timestamp": "434",
+            "timestamp": "0.434000",
             "percent": "85"
         },
         {
-            "timestamp": "467",
+            "timestamp": "0.467000",
             "percent": "92"
         },
         {
-            "timestamp": "500",
+            "timestamp": "0.500000",
             "percent": "100"
         }
     ],
-    "VisualProgress": [
+    "SpeedIndexProgress": [
         {
-            "timestamp": "0",
+            "timestamp": "0.000000",
             "percent": "0"
         },
         {
-            "timestamp": "334",
+            "timestamp": "0.334000",
             "percent": "0"
         },
         {
-            "timestamp": "367",
+            "timestamp": "0.367000",
             "percent": "0"
         },
         {
-            "timestamp": "400",
+            "timestamp": "0.400000",
             "percent": "0"
         },
         {
-            "timestamp": "434",
+            "timestamp": "0.434000",
             "percent": "1"
         },
         {
-            "timestamp": "467",
+            "timestamp": "0.467000",
             "percent": "16"
         },
         {
-            "timestamp": "500",
+            "timestamp": "0.500000",
             "percent": "100"
         }
     ]

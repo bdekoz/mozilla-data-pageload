@@ -21,10 +21,20 @@
       "2.50": "2024-11-20-win11-amazon-firefox_2.50.png",
       "2.75": "2024-11-20-win11-amazon-firefox_2.75.png",
       "3.00": "2024-11-20-win11-amazon-firefox_3.00.png",
-      "3.25": "2024-11-20-win11-amazon-firefox_3.25.png"
+      "3.25": "2024-11-20-win11-amazon-firefox_3.25.png",
+      "3.50": "2024-11-20-win11-amazon-firefox_3.50.png",
+      "3.75": "2024-11-20-win11-amazon-firefox_3.75.png",
+      "4.00": "2024-11-20-win11-amazon-firefox_4.00.png",
+      "4.25": "2024-11-20-win11-amazon-firefox_4.25.png",
+      "4.50": "2024-11-20-win11-amazon-firefox_4.50.png",
+      "4.75": "2024-11-20-win11-amazon-firefox_4.75.png",
+      "5.00": "2024-11-20-win11-amazon-firefox_5.00.png",
+      "5.25": "2024-11-20-win11-amazon-firefox_5.25.png",
+      "5.50": "2024-11-20-win11-amazon-firefox_5.50.png",
+      "5.75": "2024-11-20-win11-amazon-firefox_5.75.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "199",
+      "fcp": "199",
       "largestContentfulPaintloadTime": "341",
       "largestContentfulPaintrenderTime": "397",
       "lcp_element": "\"\"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ada75579-6fee-4ff2-9e07-287c73ffa111.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG\"\"",
@@ -42,151 +52,151 @@
       "VisualComplete85": "400",
       "PerceptualSpeedIndexProgress": [
         {
-          "timestamp": "0",
+          "timestamp": "0.000000",
           "percent": "0"
         },
         {
-          "timestamp": "280",
+          "timestamp": "0.280000",
           "percent": "77"
         },
         {
-          "timestamp": "320",
+          "timestamp": "0.320000",
           "percent": "82"
         },
         {
-          "timestamp": "440",
+          "timestamp": "0.440000",
           "percent": "94"
         },
         {
-          "timestamp": "560",
+          "timestamp": "0.560000",
           "percent": "95"
         },
         {
-          "timestamp": "600",
+          "timestamp": "0.600000",
           "percent": "95"
         },
         {
-          "timestamp": "760",
+          "timestamp": "0.760000",
           "percent": "96"
         },
         {
-          "timestamp": "800",
+          "timestamp": "0.800000",
           "percent": "97"
         },
         {
-          "timestamp": "1120",
+          "timestamp": "1.120000",
           "percent": "99"
         },
         {
-          "timestamp": "1160",
+          "timestamp": "1.160000",
           "percent": "99"
         },
         {
-          "timestamp": "1200",
+          "timestamp": "1.200000",
           "percent": "99"
         },
         {
-          "timestamp": "1320",
+          "timestamp": "1.320000",
           "percent": "100"
         }
       ],
       "ContentfulSpeedIndexProgress": [
         {
-          "timestamp": "0",
+          "timestamp": "0.000000",
           "percent": "0"
         },
         {
-          "timestamp": "280",
+          "timestamp": "0.280000",
           "percent": "84"
         },
         {
-          "timestamp": "320",
+          "timestamp": "0.320000",
           "percent": "84"
         },
         {
-          "timestamp": "440",
+          "timestamp": "0.440000",
           "percent": "87"
         },
         {
-          "timestamp": "560",
+          "timestamp": "0.560000",
           "percent": "89"
         },
         {
-          "timestamp": "600",
+          "timestamp": "0.600000",
           "percent": "90"
         },
         {
-          "timestamp": "760",
+          "timestamp": "0.760000",
           "percent": "93"
         },
         {
-          "timestamp": "800",
+          "timestamp": "0.800000",
           "percent": "93"
         },
         {
-          "timestamp": "1120",
+          "timestamp": "1.120000",
           "percent": "98"
         },
         {
-          "timestamp": "1160",
+          "timestamp": "1.160000",
           "percent": "99"
         },
         {
-          "timestamp": "1200",
+          "timestamp": "1.200000",
           "percent": "100"
         },
         {
-          "timestamp": "1320",
+          "timestamp": "1.320000",
           "percent": "100"
         }
       ],
-      "VisualProgress": [
+      "SpeedIndexProgress": [
         {
-          "timestamp": "0",
+          "timestamp": "0.000000",
           "percent": "0"
         },
         {
-          "timestamp": "280",
+          "timestamp": "0.280000",
           "percent": "67"
         },
         {
-          "timestamp": "320",
+          "timestamp": "0.320000",
           "percent": "87"
         },
         {
-          "timestamp": "440",
+          "timestamp": "0.440000",
           "percent": "95"
         },
         {
-          "timestamp": "560",
+          "timestamp": "0.560000",
           "percent": "95"
         },
         {
-          "timestamp": "600",
+          "timestamp": "0.600000",
           "percent": "95"
         },
         {
-          "timestamp": "760",
+          "timestamp": "0.760000",
           "percent": "95"
         },
         {
-          "timestamp": "800",
+          "timestamp": "0.800000",
           "percent": "95"
         },
         {
-          "timestamp": "1120",
+          "timestamp": "1.120000",
           "percent": "96"
         },
         {
-          "timestamp": "1160",
+          "timestamp": "1.160000",
           "percent": "96"
         },
         {
-          "timestamp": "1200",
+          "timestamp": "1.200000",
           "percent": "97"
         },
         {
-          "timestamp": "1320",
+          "timestamp": "1.320000",
           "percent": "100"
         }
       ]
@@ -221,14 +231,10 @@
       "5.25": "2024-11-20-win11-amazon-chrome_5.25.png",
       "5.50": "2024-11-20-win11-amazon-chrome_5.50.png",
       "5.75": "2024-11-20-win11-amazon-chrome_5.75.png",
-      "6.00": "2024-11-20-win11-amazon-chrome_6.00.png",
-      "6.25": "2024-11-20-win11-amazon-chrome_6.25.png",
-      "6.50": "2024-11-20-win11-amazon-chrome_6.50.png",
-      "6.75": "2024-11-20-win11-amazon-chrome_6.75.png",
-      "7.00": "2024-11-20-win11-amazon-chrome_7.00.png"
+      "6.00": "2024-11-20-win11-amazon-chrome_6.00.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "333",
+      "fcp": "333",
       "largestContentfulPaintloadTime": "104",
       "largestContentfulPaintrenderTime": "348",
       "lcp_element": "\"\"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ada75579-6fee-4ff2-9e07-287c73ffa111.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG\"\"",
@@ -246,43 +252,43 @@
       "VisualComplete85": "366",
       "PerceptualSpeedIndexProgress": [
         {
-          "timestamp": "0",
+          "timestamp": "0.000000",
           "percent": "0"
         },
         {
-          "timestamp": "266",
+          "timestamp": "0.266000",
           "percent": "72"
         },
         {
-          "timestamp": "366",
+          "timestamp": "0.366000",
           "percent": "100"
         }
       ],
       "ContentfulSpeedIndexProgress": [
         {
-          "timestamp": "0",
+          "timestamp": "0.000000",
           "percent": "0"
         },
         {
-          "timestamp": "266",
+          "timestamp": "0.266000",
           "percent": "74"
         },
         {
-          "timestamp": "366",
+          "timestamp": "0.366000",
           "percent": "100"
         }
       ],
-      "VisualProgress": [
+      "SpeedIndexProgress": [
         {
-          "timestamp": "0",
+          "timestamp": "0.000000",
           "percent": "0"
         },
         {
-          "timestamp": "266",
+          "timestamp": "0.266000",
           "percent": "0"
         },
         {
-          "timestamp": "366",
+          "timestamp": "0.366000",
           "percent": "100"
         }
       ]
