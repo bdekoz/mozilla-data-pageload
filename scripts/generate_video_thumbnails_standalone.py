@@ -45,11 +45,11 @@ def generate_video_filmstrip_partition_n(ivideo, totaln):
         print(i)
         timecoden = (i/totaln) * dursec
         if timecoden < 60:
-            thumbflag = "-ss 00:00:" + str(timecoden) + cspace + "-frames:v 1"
+            thumbflag = "-ss 00:00:" + str(timecoden) + cspace + "-update -frames:v 1"
         else:
             timecodemin = int(timecoden/60)
             timecodesec = timecoden - timecodemin;
-            thumbflag = "-ss 00:" + str(timecodemin) + ":" + str(timecodesec) + cspace + "-frames:v 1"
+            thumbflag = "-ss 00:" + str(timecodemin) + ":" + str(timecodesec) + cspace + "-update -frames:v 1"
         ofname = f"{filenamebase}_{i:02d}.png"
         fcommand="ffmpeg -i " + ifile + cspace + thumbflag + cspace + ofname
         #print(str(timecoden) + cspace + fcommand)
