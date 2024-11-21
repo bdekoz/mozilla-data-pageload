@@ -413,7 +413,7 @@ tr:hover {
       const metricData = filteredData[0];
 
       const chromeData = {
-	  "FirstContentfulPaint":  metricData.chrome.metrics.paintTimingfirst-contentful-paint,
+	  "FirstContentfulPaint":  metricData.chrome.metrics.fcp,
 	  "LargestContentfulPaint":  metricData.chrome.metrics.largestContentfulPaintrenderTime,
 	  "SpeedIndex": metricData.chrome.metrics.SpeedIndex,
 	  "VisualComplete85": metricData.chrome.metrics.VisualComplete85,
@@ -422,7 +422,7 @@ tr:hover {
       };
 
       const firefoxData = {
-	  "FirstContentfulPaint":  metricData.firefox.metrics.paintTimingfirst-contentful-paint,
+	  "FirstContentfulPaint":  metricData.firefox.metrics.fcp,
 	  "LargestContentfulPaint":  metricData.firefox.metrics.largestContentfulPaintrenderTime,
 	  "SpeedIndex": metricData.firefox.metrics.SpeedIndex,
 	  "VisualComplete85": metricData.firefox.metrics.VisualComplete85,

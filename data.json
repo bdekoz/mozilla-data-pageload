@@ -46,7 +46,7 @@
       "8.50": "2024-11-11-android-amazon-firefox_8.50.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "342",
+      "fcp": "342",
       "largestContentfulPaintloadTime": "436",
       "largestContentfulPaintrenderTime": "469",
       "lcp_element": "\"\"https://m.media-amazon.com/images/I/61GCKHqbcxL._AC_SX444_SY639_QL65_.jpg\"\"",
@@ -260,7 +260,7 @@
       "9.50": "2024-11-11-android-amazon-chrome_9.50.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "583",
+      "fcp": "583",
       "largestContentfulPaintloadTime": "0",
       "largestContentfulPaintrenderTime": "583",
       "lcp_element": "\"\"<h2 class='a-size-mini a-spacing-none a-color-base s-line-clamp-3'></h2>\"\"",
@@ -393,7 +393,7 @@
       "2.75": "2024-11-20-linux-amazon-firefox_2.75.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "616",
+      "fcp": "616",
       "largestContentfulPaintloadTime": "591",
       "largestContentfulPaintrenderTime": "629",
       "lcp_element": "\"\"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/d98464a8-6f13-4a70-a729-1ab1a3b7c18b._CR0,0,1200,628_SX430_QL70_.jpg\"\"",
@@ -608,7 +608,7 @@
       "6.75": "2024-11-20-linux-amazon-chrome_6.75.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "304",
+      "fcp": "304",
       "largestContentfulPaintloadTime": "0",
       "largestContentfulPaintrenderTime": "333",
       "lcp_element": "\"\"<div id='nav-xshop' class='nav-progressive-content'></div>\"\"",
@@ -743,7 +743,7 @@
       "3.25": "2024-11-20-win11-amazon-firefox_3.25.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "199",
+      "fcp": "199",
       "largestContentfulPaintloadTime": "341",
       "largestContentfulPaintrenderTime": "397",
       "lcp_element": "\"\"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ada75579-6fee-4ff2-9e07-287c73ffa111.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG\"\"",
@@ -947,7 +947,7 @@
       "7.00": "2024-11-20-win11-amazon-chrome_7.00.png"
     },
     "metrics": {
-      "paintTimingfirst-contentful-paint": "333",
+      "fcp": "333",
       "largestContentfulPaintloadTime": "104",
       "largestContentfulPaintrenderTime": "348",
       "lcp_element": "\"\"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ada75579-6fee-4ff2-9e07-287c73ffa111.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG\"\"",
