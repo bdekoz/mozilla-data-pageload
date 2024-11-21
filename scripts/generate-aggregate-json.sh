@@ -11,7 +11,7 @@ get_aggregate() {
 }
 
 #get_aggregate "amazon" "android" "2024-11-15"
-#get_aggregate "amazon" "linux" "2024-11-20"
-#get_aggregate "amazon" "win11" "2024-11-20"
+get_aggregate "amazon" "linux" "2024-11-20"
+get_aggregate "amazon" "win11" "2024-11-20"
 
-get_aggregate "amazon" "android" "2024-11-11"
+#get_aggregate "amazon" "android" "2024-11-11"
