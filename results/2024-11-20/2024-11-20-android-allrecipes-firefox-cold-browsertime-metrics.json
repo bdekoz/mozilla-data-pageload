@@ -1,0 +1,108 @@
+{
+    "fcp": "220",
+    "largestContentfulPaintloadTime": "602",
+    "largestContentfulPaintrenderTime": "618",
+    "lcp_element": "\"\"https://www.allrecipes.com/thmb/Kc2a0LVnY6pl7CI3-4bxTSMjkqY=/400x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ldw-amazon-last-chance-hidden-outlet-sales-tout-aa1d3c982e0142999810583858d4f9d5.jpg\"\"",
+    "redirectStart": "0",
+    "redirectEnd": "0",
+    "fetchStart": "0",
+    "domainLookupStart": "11",
+    "connectStart": "12",
+    "requestStart": "17",
+    "responseStart": "23",
+    "domInteractive": "279",
+    "domComplete": "316",
+    "loadEventEnd": "326",
+    "SpeedIndex": "451",
+    "VisualComplete85": "612",
+    "PerceptualSpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.232000",
+            "percent": "74"
+        },
+        {
+            "timestamp": "0.240000",
+            "percent": "75"
+        },
+        {
+            "timestamp": "0.274000",
+            "percent": "78"
+        },
+        {
+            "timestamp": "0.449000",
+            "percent": "89"
+        },
+        {
+            "timestamp": "0.565000",
+            "percent": "97"
+        },
+        {
+            "timestamp": "0.607000",
+            "percent": "100"
+        }
+    ],
+    "ContentfulSpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.232000",
+            "percent": "70"
+        },
+        {
+            "timestamp": "0.240000",
+            "percent": "71"
+        },
+        {
+            "timestamp": "0.274000",
+            "percent": "74"
+        },
+        {
+            "timestamp": "0.449000",
+            "percent": "88"
+        },
+        {
+            "timestamp": "0.565000",
+            "percent": "100"
+        },
+        {
+            "timestamp": "0.607000",
+            "percent": "100"
+        }
+    ],
+    "SpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.232000",
+            "percent": "28"
+        },
+        {
+            "timestamp": "0.240000",
+            "percent": "37"
+        },
+        {
+            "timestamp": "0.274000",
+            "percent": "47"
+        },
+        {
+            "timestamp": "0.449000",
+            "percent": "47"
+        },
+        {
+            "timestamp": "0.565000",
+            "percent": "44"
+        },
+        {
+            "timestamp": "0.607000",
+            "percent": "100"
+        }
+    ]
+}

@@ -1,0 +1,267 @@
+{
+  "test": "allrecipes",
+  "platform": "android",
+  "date": "2024-11-20",
+  "video_side_by_side": "2024-11-20-android-allrecipes-side-by-side.mp4",
+  "firefox": {
+    "video": {
+      "file": "2024-11-20-android-allrecipes-firefox.mp4",
+      "iteration": "8"
+    },
+    "filmstrip": {
+      "0.25": "2024-11-20-android-allrecipes-firefox_0.25.png",
+      "0.50": "2024-11-20-android-allrecipes-firefox_0.50.png",
+      "0.75": "2024-11-20-android-allrecipes-firefox_0.75.png",
+      "1.00": "2024-11-20-android-allrecipes-firefox_1.00.png",
+      "1.25": "2024-11-20-android-allrecipes-firefox_1.25.png",
+      "1.50": "2024-11-20-android-allrecipes-firefox_1.50.png",
+      "1.75": "2024-11-20-android-allrecipes-firefox_1.75.png",
+      "2.00": "2024-11-20-android-allrecipes-firefox_2.00.png",
+      "2.25": "2024-11-20-android-allrecipes-firefox_2.25.png",
+      "2.50": "2024-11-20-android-allrecipes-firefox_2.50.png",
+      "2.75": "2024-11-20-android-allrecipes-firefox_2.75.png",
+      "3.00": "2024-11-20-android-allrecipes-firefox_3.00.png",
+      "3.25": "2024-11-20-android-allrecipes-firefox_3.25.png",
+      "3.50": "2024-11-20-android-allrecipes-firefox_3.50.png",
+      "3.75": "2024-11-20-android-allrecipes-firefox_3.75.png",
+      "4.00": "2024-11-20-android-allrecipes-firefox_4.00.png",
+      "4.25": "2024-11-20-android-allrecipes-firefox_4.25.png",
+      "4.50": "2024-11-20-android-allrecipes-firefox_4.50.png",
+      "4.75": "2024-11-20-android-allrecipes-firefox_4.75.png",
+      "5.00": "2024-11-20-android-allrecipes-firefox_5.00.png",
+      "5.25": "2024-11-20-android-allrecipes-firefox_5.25.png",
+      "5.50": "2024-11-20-android-allrecipes-firefox_5.50.png",
+      "5.75": "2024-11-20-android-allrecipes-firefox_5.75.png",
+      "6.00": "2024-11-20-android-allrecipes-firefox_6.00.png",
+      "6.25": "2024-11-20-android-allrecipes-firefox_6.25.png",
+      "6.50": "2024-11-20-android-allrecipes-firefox_6.50.png",
+      "6.75": "2024-11-20-android-allrecipes-firefox_6.75.png",
+      "7.00": "2024-11-20-android-allrecipes-firefox_7.00.png",
+      "7.25": "2024-11-20-android-allrecipes-firefox_7.25.png",
+      "7.50": "2024-11-20-android-allrecipes-firefox_7.50.png",
+      "7.75": "2024-11-20-android-allrecipes-firefox_7.75.png",
+      "8.00": "2024-11-20-android-allrecipes-firefox_8.00.png"
+    },
+    "metrics": {
+      "fcp": "220",
+      "largestContentfulPaintloadTime": "602",
+      "largestContentfulPaintrenderTime": "618",
+      "lcp_element": "\"\"https://www.allrecipes.com/thmb/Kc2a0LVnY6pl7CI3-4bxTSMjkqY=/400x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ldw-amazon-last-chance-hidden-outlet-sales-tout-aa1d3c982e0142999810583858d4f9d5.jpg\"\"",
+      "redirectStart": "0",
+      "redirectEnd": "0",
+      "fetchStart": "0",
+      "domainLookupStart": "11",
+      "connectStart": "12",
+      "requestStart": "17",
+      "responseStart": "23",
+      "domInteractive": "279",
+      "domComplete": "316",
+      "loadEventEnd": "326",
+      "SpeedIndex": "451",
+      "VisualComplete85": "612",
+      "PerceptualSpeedIndexProgress": [
+        {
+          "timestamp": "0.000000",
+          "percent": "0"
+        },
+        {
+          "timestamp": "0.232000",
+          "percent": "74"
+        },
+        {
+          "timestamp": "0.240000",
+          "percent": "75"
+        },
+        {
+          "timestamp": "0.274000",
+          "percent": "78"
+        },
+        {
+          "timestamp": "0.449000",
+          "percent": "89"
+        },
+        {
+          "timestamp": "0.565000",
+          "percent": "97"
+        },
+        {
+          "timestamp": "0.607000",
+          "percent": "100"
+        }
+      ],
+      "ContentfulSpeedIndexProgress": [
+        {
+          "timestamp": "0.000000",
+          "percent": "0"
+        },
+        {
+          "timestamp": "0.232000",
+          "percent": "70"
+        },
+        {
+          "timestamp": "0.240000",
+          "percent": "71"
+        },
+        {
+          "timestamp": "0.274000",
+          "percent": "74"
+        },
+        {
+          "timestamp": "0.449000",
+          "percent": "88"
+        },
+        {
+          "timestamp": "0.565000",
+          "percent": "100"
+        },
+        {
+          "timestamp": "0.607000",
+          "percent": "100"
+        }
+      ],
+      "SpeedIndexProgress": [
+        {
+          "timestamp": "0.000000",
+          "percent": "0"
+        },
+        {
+          "timestamp": "0.232000",
+          "percent": "28"
+        },
+        {
+          "timestamp": "0.240000",
+          "percent": "37"
+        },
+        {
+          "timestamp": "0.274000",
+          "percent": "47"
+        },
+        {
+          "timestamp": "0.449000",
+          "percent": "47"
+        },
+        {
+          "timestamp": "0.565000",
+          "percent": "44"
+        },
+        {
+          "timestamp": "0.607000",
+          "percent": "100"
+        }
+      ]
+    }
+  },
+  "chrome": {
+    "video": {
+      "file": "2024-11-20-android-allrecipes-chrome.mp4",
+      "iteration": "5"
+    },
+    "filmstrip": {
+      "0.25": "2024-11-20-android-allrecipes-chrome_0.25.png",
+      "0.50": "2024-11-20-android-allrecipes-chrome_0.50.png",
+      "0.75": "2024-11-20-android-allrecipes-chrome_0.75.png",
+      "1.00": "2024-11-20-android-allrecipes-chrome_1.00.png",
+      "1.25": "2024-11-20-android-allrecipes-chrome_1.25.png",
+      "1.50": "2024-11-20-android-allrecipes-chrome_1.50.png",
+      "1.75": "2024-11-20-android-allrecipes-chrome_1.75.png",
+      "2.00": "2024-11-20-android-allrecipes-chrome_2.00.png",
+      "2.25": "2024-11-20-android-allrecipes-chrome_2.25.png",
+      "2.50": "2024-11-20-android-allrecipes-chrome_2.50.png",
+      "2.75": "2024-11-20-android-allrecipes-chrome_2.75.png",
+      "3.00": "2024-11-20-android-allrecipes-chrome_3.00.png",
+      "3.25": "2024-11-20-android-allrecipes-chrome_3.25.png",
+      "3.50": "2024-11-20-android-allrecipes-chrome_3.50.png",
+      "3.75": "2024-11-20-android-allrecipes-chrome_3.75.png",
+      "4.00": "2024-11-20-android-allrecipes-chrome_4.00.png",
+      "4.25": "2024-11-20-android-allrecipes-chrome_4.25.png",
+      "4.50": "2024-11-20-android-allrecipes-chrome_4.50.png",
+      "4.75": "2024-11-20-android-allrecipes-chrome_4.75.png",
+      "5.00": "2024-11-20-android-allrecipes-chrome_5.00.png",
+      "5.25": "2024-11-20-android-allrecipes-chrome_5.25.png",
+      "5.50": "2024-11-20-android-allrecipes-chrome_5.50.png",
+      "5.75": "2024-11-20-android-allrecipes-chrome_5.75.png",
+      "6.00": "2024-11-20-android-allrecipes-chrome_6.00.png",
+      "6.25": "2024-11-20-android-allrecipes-chrome_6.25.png",
+      "6.50": "2024-11-20-android-allrecipes-chrome_6.50.png",
+      "6.75": "2024-11-20-android-allrecipes-chrome_6.75.png",
+      "7.00": "2024-11-20-android-allrecipes-chrome_7.00.png",
+      "7.25": "2024-11-20-android-allrecipes-chrome_7.25.png",
+      "7.50": "2024-11-20-android-allrecipes-chrome_7.50.png",
+      "7.75": "2024-11-20-android-allrecipes-chrome_7.75.png",
+      "8.00": "2024-11-20-android-allrecipes-chrome_8.00.png",
+      "8.25": "2024-11-20-android-allrecipes-chrome_8.25.png"
+    },
+    "metrics": {
+      "fcp": "337",
+      "largestContentfulPaintloadTime": "326",
+      "largestContentfulPaintrenderTime": "446",
+      "lcp_element": "\"\"https://www.allrecipes.com/thmb/Kc2a0LVnY6pl7CI3-4bxTSMjkqY=/400x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ldw-amazon-last-chance-hidden-outlet-sales-tout-aa1d3c982e0142999810583858d4f9d5.jpg\"\"",
+      "redirectStart": "0",
+      "redirectEnd": "0",
+      "fetchStart": "7",
+      "domainLookupStart": "7",
+      "connectStart": "12",
+      "requestStart": "26",
+      "responseStart": "40",
+      "domInteractive": "249",
+      "domComplete": "273",
+      "loadEventEnd": "289",
+      "SpeedIndex": "360",
+      "VisualComplete85": "413",
+      "PerceptualSpeedIndexProgress": [
+        {
+          "timestamp": "0.000000",
+          "percent": "0"
+        },
+        {
+          "timestamp": "0.313000",
+          "percent": "94"
+        },
+        {
+          "timestamp": "0.347000",
+          "percent": "96"
+        },
+        {
+          "timestamp": "0.413000",
+          "percent": "100"
+        }
+      ],
+      "ContentfulSpeedIndexProgress": [
+        {
+          "timestamp": "0.000000",
+          "percent": "0"
+        },
+        {
+          "timestamp": "0.313000",
+          "percent": "96"
+        },
+        {
+          "timestamp": "0.347000",
+          "percent": "100"
+        },
+        {
+          "timestamp": "0.413000",
+          "percent": "100"
+        }
+      ],
+      "SpeedIndexProgress": [
+        {
+          "timestamp": "0.000000",
+          "percent": "0"
+        },
+        {
+          "timestamp": "0.313000",
+          "percent": "54"
+        },
+        {
+          "timestamp": "0.347000",
+          "percent": "52"
+        },
+        {
+          "timestamp": "0.413000",
+          "percent": "100"
+        }
+      ]
+    }
+  }
+}

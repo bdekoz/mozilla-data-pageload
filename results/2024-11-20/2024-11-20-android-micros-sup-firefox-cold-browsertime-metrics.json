@@ -1,0 +1,168 @@
+{
+    "fcp": "401",
+    "largestContentfulPaintloadTime": "536",
+    "largestContentfulPaintrenderTime": "536",
+    "lcp_element": "\"\"https://support.content.office.net/en-us/media/smc-hero.jpg\"\"",
+    "redirectStart": "0",
+    "redirectEnd": "0",
+    "fetchStart": "0",
+    "domainLookupStart": "12",
+    "connectStart": "14",
+    "requestStart": "19",
+    "responseStart": "25",
+    "domInteractive": "529",
+    "domComplete": "945",
+    "loadEventEnd": "953",
+    "SpeedIndex": "775",
+    "VisualComplete85": "1057",
+    "PerceptualSpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.451000",
+            "percent": "41"
+        },
+        {
+            "timestamp": "0.468000",
+            "percent": "42"
+        },
+        {
+            "timestamp": "0.534000",
+            "percent": "45"
+        },
+        {
+            "timestamp": "0.650000",
+            "percent": "51"
+        },
+        {
+            "timestamp": "0.668000",
+            "percent": "52"
+        },
+        {
+            "timestamp": "0.709000",
+            "percent": "55"
+        },
+        {
+            "timestamp": "0.750000",
+            "percent": "57"
+        },
+        {
+            "timestamp": "0.758000",
+            "percent": "58"
+        },
+        {
+            "timestamp": "0.834000",
+            "percent": "63"
+        },
+        {
+            "timestamp": "0.843000",
+            "percent": "64"
+        },
+        {
+            "timestamp": "1.384000",
+            "percent": "100"
+        }
+    ],
+    "ContentfulSpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.451000",
+            "percent": "78"
+        },
+        {
+            "timestamp": "0.468000",
+            "percent": "80"
+        },
+        {
+            "timestamp": "0.534000",
+            "percent": "88"
+        },
+        {
+            "timestamp": "0.650000",
+            "percent": "97"
+        },
+        {
+            "timestamp": "0.668000",
+            "percent": "98"
+        },
+        {
+            "timestamp": "0.709000",
+            "percent": "98"
+        },
+        {
+            "timestamp": "0.750000",
+            "percent": "98"
+        },
+        {
+            "timestamp": "0.758000",
+            "percent": "98"
+        },
+        {
+            "timestamp": "0.834000",
+            "percent": "99"
+        },
+        {
+            "timestamp": "0.843000",
+            "percent": "99"
+        },
+        {
+            "timestamp": "1.384000",
+            "percent": "100"
+        }
+    ],
+    "SpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.451000",
+            "percent": "17"
+        },
+        {
+            "timestamp": "0.468000",
+            "percent": "19"
+        },
+        {
+            "timestamp": "0.534000",
+            "percent": "20"
+        },
+        {
+            "timestamp": "0.650000",
+            "percent": "53"
+        },
+        {
+            "timestamp": "0.668000",
+            "percent": "53"
+        },
+        {
+            "timestamp": "0.709000",
+            "percent": "59"
+        },
+        {
+            "timestamp": "0.750000",
+            "percent": "59"
+        },
+        {
+            "timestamp": "0.758000",
+            "percent": "59"
+        },
+        {
+            "timestamp": "0.834000",
+            "percent": "59"
+        },
+        {
+            "timestamp": "0.843000",
+            "percent": "59"
+        },
+        {
+            "timestamp": "1.384000",
+            "percent": "100"
+        }
+    ]
+}

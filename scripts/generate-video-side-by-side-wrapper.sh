@@ -27,5 +27,9 @@ get_side_by_side() {
 }
 
 #get_side_by_side "android-amazon" "2024-11-11"
-get_side_by_side "linux-amazon" "2024-11-20"
-get_side_by_side "win11-amazon" "2024-11-20"
+#get_side_by_side "linux-amazon" "2024-11-20"
+#get_side_by_side "win11-amazon" "2024-11-20"
+
+get_side_by_side "android-allrecipes" "2024-11-20"
+get_side_by_side "android-espn" "2024-11-20"
+get_side_by_side "android-micros-sup" "2024-11-20"

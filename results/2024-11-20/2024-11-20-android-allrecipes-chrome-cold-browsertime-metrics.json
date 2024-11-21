@@ -1,0 +1,72 @@
+{
+    "fcp": "337",
+    "largestContentfulPaintloadTime": "326",
+    "largestContentfulPaintrenderTime": "446",
+    "lcp_element": "\"\"https://www.allrecipes.com/thmb/Kc2a0LVnY6pl7CI3-4bxTSMjkqY=/400x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ldw-amazon-last-chance-hidden-outlet-sales-tout-aa1d3c982e0142999810583858d4f9d5.jpg\"\"",
+    "redirectStart": "0",
+    "redirectEnd": "0",
+    "fetchStart": "7",
+    "domainLookupStart": "7",
+    "connectStart": "12",
+    "requestStart": "26",
+    "responseStart": "40",
+    "domInteractive": "249",
+    "domComplete": "273",
+    "loadEventEnd": "289",
+    "SpeedIndex": "360",
+    "VisualComplete85": "413",
+    "PerceptualSpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.313000",
+            "percent": "94"
+        },
+        {
+            "timestamp": "0.347000",
+            "percent": "96"
+        },
+        {
+            "timestamp": "0.413000",
+            "percent": "100"
+        }
+    ],
+    "ContentfulSpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.313000",
+            "percent": "96"
+        },
+        {
+            "timestamp": "0.347000",
+            "percent": "100"
+        },
+        {
+            "timestamp": "0.413000",
+            "percent": "100"
+        }
+    ],
+    "SpeedIndexProgress": [
+        {
+            "timestamp": "0.000000",
+            "percent": "0"
+        },
+        {
+            "timestamp": "0.313000",
+            "percent": "54"
+        },
+        {
+            "timestamp": "0.347000",
+            "percent": "52"
+        },
+        {
+            "timestamp": "0.413000",
+            "percent": "100"
+        }
+    ]
+}

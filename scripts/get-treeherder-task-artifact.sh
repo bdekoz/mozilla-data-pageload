@@ -70,8 +70,6 @@ get_artifact_and_unpack() {
 #get_artifact_and_unpack "win11-amazon-chrome" "Oa70G72URmi3IWnVPCBjfA"
 #get_artifact_and_unpack "win11-amazon-firefox" "HJZ7SBoBT_Cm27D5w05_3g"
 
-# lastest platform matches as of 2024-11-19
-
 # 2024-11-15T09:34:47Z
 # revision: f918befd42312cdf96757bea838a55620ce4cb7f
 # pstanciu@mozilla.com, id(482802694), push_id(1533676)
@@ -81,7 +79,22 @@ get_artifact_and_unpack() {
 # 2024-11-20T01:16:56Z
 # revision c03ba0b165f20fa7694f8ec94ad24134407b45a9
 # kshampur@mozilla.com
-get_artifact_and_unpack "linux-amazon-chrome" "LAkRMFQeRlO_nGBz7NGMSg"
-get_artifact_and_unpack "linux-amazon-firefox" "AngA8HVnTCWnP4Jq3fdY4Q"
-get_artifact_and_unpack "win11-amazon-chrome" "ZSBBjQdFTUu1cccBNdZFrA"
-get_artifact_and_unpack "win11-amazon-firefox" "FqLOMW9MTx-1BRFJVCQdYQ"
+#get_artifact_and_unpack "linux-amazon-chrome" "LAkRMFQeRlO_nGBz7NGMSg"
+#get_artifact_and_unpack "linux-amazon-firefox" "AngA8HVnTCWnP4Jq3fdY4Q"
+#get_artifact_and_unpack "win11-amazon-chrome" "ZSBBjQdFTUu1cccBNdZFrA"
+#get_artifact_and_unpack "win11-amazon-firefox" "FqLOMW9MTx-1BRFJVCQdYQ"
+
+# lastest platform matches as of 2024-11-20
+
+# 2024-11-20
+# revision a3474ea43c045230a16fe2546af125bc643d47c2
+get_artifact_and_unpack "android-allrecipes-chrome" "OxA_fZ3RSAStcrYEJXkwYA"
+get_artifact_and_unpack "android-allrecipes-firefox" "cATLFcaiSeuA9v1HtFV2Eg"
+
+get_artifact_and_unpack "android-espn-chrome" "CbP1VDn4SV-BlFHMxwPPaQ"
+get_artifact_and_unpack "android-espn-firefox" "KR3QO8o0TM-ETeSjgZKobQ"
+
+get_artifact_and_unpack "android-micros-sup-chrome" "CWg2rBBrQ3iKeCbZVZetVg"
+get_artifact_and_unpack "android-micros-sup-firefox" "Hvp-x46aS5K37HKIZWgWyg"
+
+
