@@ -413,21 +413,21 @@ tr:hover {
       const metricData = filteredData[0];
 
       const chromeData = {
-	  "FirstContentfulPaint":  metricData.data.chrome.paintTimingfirst-contentful-paint,
-	  "LargestContentfulPaint":  metricData.data.chrome.largestContentfulPaintrenderTime,
-	  "SpeedIndex": metricData.data.chrome.visualMetrics.SpeedIndex,
-	  "VisualComplete85": metricData.data.chrome.visualMetrics.VisualComplete85,
-	  "domComplete": metricData.data.chrome.visualMetrics.domComplete,
-	  "loadEventEnd": metricData.data.chrome.visualMetrics.loadEventEnd
+	  "FirstContentfulPaint":  metricData.chrome.metrics.paintTimingfirst-contentful-paint,
+	  "LargestContentfulPaint":  metricData.chrome.metrics.largestContentfulPaintrenderTime,
+	  "SpeedIndex": metricData.chrome.metrics.SpeedIndex,
+	  "VisualComplete85": metricData.chrome.metrics.VisualComplete85,
+	  "domComplete": metricData.chrome.metrics.domComplete,
+	  "loadEventEnd": metricData.chrome.metrics.loadEventEnd
       };
 
       const firefoxData = {
-	  "FirstContentfulPaint":  metricData.data.firefox.paintTimingfirst-contentful-paint,
-	  "LargestContentfulPaint":  metricData.data.firefox.largestContentfulPaintrenderTime,
-	  "SpeedIndex": metricData.data.firefox.visualMetrics.SpeedIndex,
-	  "VisualComplete85": metricData.data.firefox.visualMetrics.VisualComplete85,
-	  "domComplete": metricData.data.firefox.visualMetrics.domComplete,
-	  "loadEventEnd": metricData.data.firefox.visualMetrics.loadEventEnd
+	  "FirstContentfulPaint":  metricData.firefox.metrics.paintTimingfirst-contentful-paint,
+	  "LargestContentfulPaint":  metricData.firefox.metrics.largestContentfulPaintrenderTime,
+	  "SpeedIndex": metricData.firefox.metrics.SpeedIndex,
+	  "VisualComplete85": metricData.firefox.metrics.VisualComplete85,
+	  "domComplete": metricData.firefox.metrics.domComplete,
+	  "loadEventEnd": metricData.firefox.metrics.loadEventEnd
       };
 
       const tableElement = document.getElementById(`${metric}-table`);
