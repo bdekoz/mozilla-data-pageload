@@ -274,19 +274,19 @@ tr:hover {
 <script>
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  
+
   // Get os and percentile parameters, if they exist
   const os = urlParams.get('os');
-  
+
   if (os) {
     window.platformStatus = os;
   } else {
     window.platformStatus = 'windows';
   }
-  
+
   // Set some defaults.
   window.allCharts = [];
-  
+
   function setPlatform(platform) {
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set('os', platform);
@@ -299,108 +299,108 @@ tr:hover {
 
   function displayVisualProgress(type) {
     const platform = window.platformStatus;
-  
+
     window.metrics.forEach(metric => {
       const filteredData = window.data.filter(row => row.test === metric && row.platform === platform);
       const metricData = filteredData[0];
-  
+
       const chromeData = metricData.data.chrome.visualMetrics[type+'Progress'];
       const firefoxData = metricData.data.firefox.visualMetrics[type+'Progress'];
       const filmstripTimestamps = Object.keys(metricData.data.chrome.filmstrip).map(Number); // Convert to numbers
-  
+
       // Interpolation helper
       const interpolateVisualProgress = (timestamps, visualProgress) => {
-        const interpolatedProgress = [];
-  
-        // Helper function to find visual progress at a given timestamp
-        const findProgressAt = (timestamp) => {
-          for (let i = 0; i < visualProgress.length - 1; i++) {
-            const start = visualProgress[i];
-            const end = visualProgress[i + 1];
-            if (timestamp >= start.timestamp && timestamp <= end.timestamp) {
-              // Linear interpolation formula
-              const fraction = (timestamp - start.timestamp) / (end.timestamp - start.timestamp);
-              return start.percent + fraction * (end.percent - start.percent);
-            }
-          }
-          return timestamp < visualProgress[0].timestamp ? visualProgress[0].percent : visualProgress[visualProgress.length - 1].percent;
-        };
-  
-        // Interpolate progress for each filmstrip timestamp
-        timestamps.forEach(timestamp => {
-          interpolatedProgress.push(findProgressAt(timestamp));
-        });
-  
-        return interpolatedProgress;
+	const interpolatedProgress = [];
+
+	// Helper function to find visual progress at a given timestamp
+	const findProgressAt = (timestamp) => {
+	  for (let i = 0; i < visualProgress.length - 1; i++) {
+	    const start = visualProgress[i];
+	    const end = visualProgress[i + 1];
+	    if (timestamp >= start.timestamp && timestamp <= end.timestamp) {
+	      // Linear interpolation formula
+	      const fraction = (timestamp - start.timestamp) / (end.timestamp - start.timestamp);
+	      return start.percent + fraction * (end.percent - start.percent);
+	    }
+	  }
+	  return timestamp < visualProgress[0].timestamp ? visualProgress[0].percent : visualProgress[visualProgress.length - 1].percent;
+	};
+
+	// Interpolate progress for each filmstrip timestamp
+	timestamps.forEach(timestamp => {
+	  interpolatedProgress.push(findProgressAt(timestamp));
+	});
+
+	return interpolatedProgress;
       };
-  
+
       // Interpolate both Firefox and Chrome's visual progress over filmstrip timestamps
       const interpolatedChromeProgress = interpolateVisualProgress(filmstripTimestamps, chromeData);
       const interpolatedFirefoxProgress = interpolateVisualProgress(filmstripTimestamps, firefoxData);
-  
+
       const siElement = document.getElementById(`${metric}-${type}`);
       siElement.innerHTML = '';
-  
+
       const canvas = document.createElement('canvas');
       canvas.width = 800;
       canvas.height = 200;
       siElement.appendChild(canvas);
-  
+
       const ctx = canvas.getContext('2d');
       new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: filmstripTimestamps,
-          datasets: [
-            {
-              label: 'Chrome',
-              data: interpolatedChromeProgress,
-              borderColor: 'rgba(54, 162, 235, 1)', // Blue
-              backgroundColor: 'rgba(54, 162, 235, 0.2)',
-              borderWidth: 2,
-              fill: false,
-            },
-            {
-              label: 'Firefox',
-              data: interpolatedFirefoxProgress,
-              borderColor: 'rgba(255, 99, 132, 1)', // Red
-              backgroundColor: 'rgba(255, 99, 132, 0.2)',
-              borderWidth: 2,
-              fill: false,
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'right',
-            },
-            title: {
-              display: true,
-              text: `${type} (${metric})`,
-              font: {
-                size: 14
-              }
-            }
-          },
-          scales: {
-            x: {
-              title: {
-                display: true,
-                text: 'Timestamp (ms)',
-              }
-            },
-            y: {
-              title: {
-                display: true,
-                text: 'Visual Progress (%)',
-              },
-              min: 0,
-              max: 100,
-            }
-          }
-        }
+	type: 'line',
+	data: {
+	  labels: filmstripTimestamps,
+	  datasets: [
+	    {
+	      label: 'Chrome',
+	      data: interpolatedChromeProgress,
+	      borderColor: 'rgba(54, 162, 235, 1)', // Blue
+	      backgroundColor: 'rgba(54, 162, 235, 0.2)',
+	      borderWidth: 2,
+	      fill: false,
+	    },
+	    {
+	      label: 'Firefox',
+	      data: interpolatedFirefoxProgress,
+	      borderColor: 'rgba(255, 99, 132, 1)', // Red
+	      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+	      borderWidth: 2,
+	      fill: false,
+	    }
+	  ]
+	},
+	options: {
+	  responsive: true,
+	  plugins: {
+	    legend: {
+	      position: 'right',
+	    },
+	    title: {
+	      display: true,
+	      text: `${type} (${metric})`,
+	      font: {
+		size: 14
+	      }
+	    }
+	  },
+	  scales: {
+	    x: {
+	      title: {
+		display: true,
+		text: 'Timestamp (s)',
+	      }
+	    },
+	    y: {
+	      title: {
+		display: true,
+		text: 'Visual Progress (%)',
+	      },
+	      min: 0,
+	      max: 100,
+	    }
+	  }
+	}
       });
     });
   }
@@ -413,19 +413,21 @@ tr:hover {
       const metricData = filteredData[0];
 
       const chromeData = {
-          "FirstContentfulPaint":  metricData.data.chrome.firstContentfulPaint,
-          "LargestContentfulPaint":  metricData.data.chrome.largestContentfulPaint,
-          "SpeedIndex": metricData.data.chrome.visualMetrics.SpeedIndex,
-          "PerceptualSpeedIndex": metricData.data.chrome.visualMetrics.PerceptualSpeedIndex,
-          "ContentfulSpeedIndex": metricData.data.chrome.visualMetrics.ContentfulSpeedIndex
+	  "FirstContentfulPaint":  metricData.data.chrome.paintTimingfirst-contentful-paint,
+	  "LargestContentfulPaint":  metricData.data.chrome.largestContentfulPaintrenderTime,
+	  "SpeedIndex": metricData.data.chrome.visualMetrics.SpeedIndex,
+	  "VisualComplete85": metricData.data.chrome.visualMetrics.VisualComplete85,
+	  "domComplete": metricData.data.chrome.visualMetrics.domComplete,
+	  "loadEventEnd": metricData.data.chrome.visualMetrics.loadEventEnd
       };
 
       const firefoxData = {
-          "FirstContentfulPaint":  metricData.data.firefox.firstContentfulPaint,
-          "LargestContentfulPaint":  metricData.data.firefox.largestContentfulPaint,
-          "SpeedIndex": metricData.data.firefox.visualMetrics.SpeedIndex,
-          "PerceptualSpeedIndex": metricData.data.firefox.visualMetrics.PerceptualSpeedIndex,
-          "ContentfulSpeedIndex": metricData.data.firefox.visualMetrics.ContentfulSpeedIndex
+	  "FirstContentfulPaint":  metricData.data.firefox.paintTimingfirst-contentful-paint,
+	  "LargestContentfulPaint":  metricData.data.firefox.largestContentfulPaintrenderTime,
+	  "SpeedIndex": metricData.data.firefox.visualMetrics.SpeedIndex,
+	  "VisualComplete85": metricData.data.firefox.visualMetrics.VisualComplete85,
+	  "domComplete": metricData.data.firefox.visualMetrics.domComplete,
+	  "loadEventEnd": metricData.data.firefox.visualMetrics.loadEventEnd
       };
 
       const tableElement = document.getElementById(`${metric}-table`);
@@ -434,40 +436,40 @@ tr:hover {
       const table = document.createElement('table');
       table.className = 'comparison-table';
       table.innerHTML = `
-        <thead>
-          <tr>
-            <th>Metric</th>
-            <th>Chrome</th>
-            <th>Firefox</th>
-            <th>Difference</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
+	<thead>
+	  <tr>
+	    <th>Metric</th>
+	    <th>Chrome</th>
+	    <th>Firefox</th>
+	    <th>Difference</th>
+	  </tr>
+	</thead>
+	<tbody>
+	</tbody>
       `;
 
       // Populate the table body with data
       const tbody = table.querySelector('tbody');
       Object.keys(chromeData).forEach(key => {
-        const chromeValue = chromeData[key];
-        const firefoxValue = firefoxData[key];
-        const difference = ((chromeValue - firefoxValue) / firefoxValue * 100).toFixed(2);
+	const chromeValue = chromeData[key];
+	const firefoxValue = firefoxData[key];
+	const difference = ((chromeValue - firefoxValue) / firefoxValue * 100).toFixed(2);
 
-        let differenceColor = '';
-        if (difference > 10) {
-          differenceColor = 'green';
-        } else {
-          differenceColor = 'red';
-        }
+	let differenceColor = '';
+	if (difference > 10) {
+	  differenceColor = 'green';
+	} else {
+	  differenceColor = 'red';
+	}
 
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${key}</td>
-          <td>${chromeValue}</td>
-          <td>${firefoxValue}</td>
-          <td style="color:${differenceColor}">${difference}%</td>
-        `;
-        tbody.appendChild(row);
+	const row = document.createElement('tr');
+	row.innerHTML = `
+	  <td>${key}</td>
+	  <td>${chromeValue}</td>
+	  <td>${firefoxValue}</td>
+	  <td style="color:${differenceColor}">${difference}%</td>
+	`;
+	tbody.appendChild(row);
       });
 
 
@@ -478,68 +480,68 @@ tr:hover {
 
   function displayFilmstrips() {
     const platform = window.platformStatus;
-  
+
     window.metrics.forEach(metric => {
       const filteredData = window.data.filter(row => row.test === metric && row.platform === platform);
       const filmstripData = filteredData[0];
       const filmstripElement = document.getElementById(`${metric}-filmstrip`);
 
       filmstripElement.innerHTML = '';
-  
+
       // Get the list of timestamps (assumes Chrome and Firefox have the same timestamps)
       const timestamps = Object.keys(filmstripData.data.chrome.filmstrip);
-  
+
       timestamps.forEach(timestamp => {
-        // Create a container for each timestamp
-        const timestampContainer = document.createElement('div');
-        timestampContainer.className = 'timestamp-container';
-  
-        // Create a timestamp label
-        const timestampLabel = document.createElement('div');
-        timestampLabel.className = 'timestamp';
-        timestampLabel.textContent = `${timestamp} ms`;
-        timestampContainer.appendChild(timestampLabel);
-  
-        // Create Firefox image element
-        const firefoxImage = document.createElement('img');
-        firefoxImage.src = filmstripData.data.firefox.filmstrip[timestamp];
-        firefoxImage.alt = `Firefox Frame at ${timestamp} ms`;
-        firefoxImage.className = 'filmstrip-image';
-        timestampContainer.appendChild(firefoxImage);
+	// Create a container for each timestamp
+	const timestampContainer = document.createElement('div');
+	timestampContainer.className = 'timestamp-container';
 
-        // Create a Firefox metric label
-        const firefoxMetricLabel = document.createElement('div');
-        firefoxMetricLabel.className = 'metriclabel';
-        firefoxMetricLabel.textContent = ``;
-        timestampContainer.appendChild(firefoxMetricLabel);
-  
-        // Create Chrome image element
-        const chromeImage = document.createElement('img');
-        chromeImage.src = filmstripData.data.chrome.filmstrip[timestamp];
-        chromeImage.alt = `Chrome Frame at ${timestamp} ms`;
-        chromeImage.className = 'filmstrip-image';
-        timestampContainer.appendChild(chromeImage);
+	// Create a timestamp label
+	const timestampLabel = document.createElement('div');
+	timestampLabel.className = 'timestamp';
+	timestampLabel.textContent = `${timestamp} ms`;
+	timestampContainer.appendChild(timestampLabel);
 
-        // Create a Chrome metric label
-        const chromeMetricLabel = document.createElement('div');
-        chromeMetricLabel.className = 'metriclabel';
-        chromeMetricLabel.textContent = ``;
-        timestampContainer.appendChild(chromeMetricLabel);
+	// Create Firefox image element
+	const firefoxImage = document.createElement('img');
+	firefoxImage.src = filmstripData.data.firefox.filmstrip[timestamp];
+	firefoxImage.alt = `Firefox Frame at ${timestamp} ms`;
+	firefoxImage.className = 'filmstrip-image';
+	timestampContainer.appendChild(firefoxImage);
 
-        // Attach click event listeners for modal functionality
-        [firefoxImage, chromeImage].forEach(img => {
-          img.onclick = function() {
-            const modal = document.getElementById("imageModal");
-            const enlargedImage = document.getElementById("enlargedImage");
-            const caption = document.getElementById("caption");
-            modal.style.display = "block";
-            enlargedImage.src = this.src;
-            caption.textContent = this.alt;
-          };
-        });
-  
-        // Append the container to the filmstrip row
-        filmstripElement.appendChild(timestampContainer);
+	// Create a Firefox metric label
+	const firefoxMetricLabel = document.createElement('div');
+	firefoxMetricLabel.className = 'metriclabel';
+	firefoxMetricLabel.textContent = ``;
+	timestampContainer.appendChild(firefoxMetricLabel);
+
+	// Create Chrome image element
+	const chromeImage = document.createElement('img');
+	chromeImage.src = filmstripData.data.chrome.filmstrip[timestamp];
+	chromeImage.alt = `Chrome Frame at ${timestamp} ms`;
+	chromeImage.className = 'filmstrip-image';
+	timestampContainer.appendChild(chromeImage);
+
+	// Create a Chrome metric label
+	const chromeMetricLabel = document.createElement('div');
+	chromeMetricLabel.className = 'metriclabel';
+	chromeMetricLabel.textContent = ``;
+	timestampContainer.appendChild(chromeMetricLabel);
+
+	// Attach click event listeners for modal functionality
+	[firefoxImage, chromeImage].forEach(img => {
+	  img.onclick = function() {
+	    const modal = document.getElementById("imageModal");
+	    const enlargedImage = document.getElementById("enlargedImage");
+	    const caption = document.getElementById("caption");
+	    modal.style.display = "block";
+	    enlargedImage.src = this.src;
+	    caption.textContent = this.alt;
+	  };
+	});
+
+	// Append the container to the filmstrip row
+	filmstripElement.appendChild(timestampContainer);
       });
     });
   }
@@ -549,10 +551,10 @@ tr:hover {
 
     window.metrics.forEach(metric => {
       let videoHTML = `
-          <video controls height="400">
-          <source src="videos/${metric}-${platform}-side-by-side.mp4" type="video/mp4">
-          </video>
-        `;
+	  <video controls height="400">
+	  <source src="videos/${platform}-${metric}-side-by-side.mp4" type="video/mp4">
+	  </video>
+	`;
       document.getElementById(`${metric}-video`).innerHTML = videoHTML;
     });
   }
@@ -570,12 +572,12 @@ tr:hover {
     fetch(dataUrl)
       .then(response => response.json())
       .then(data => {
-        window.data = data;
-        displayAllContent();
+	window.data = data;
+	displayAllContent();
       })
       .catch(error => console.error('Error loading the JSON file:', error));
   }
-  
+
   function generateContent(dataUrl) {
     const platformInput = document.getElementById('platform-select');
     platformInput.value = window.platformStatus;
@@ -589,45 +591,45 @@ tr:hover {
     });
     document.querySelector('.sections').innerHTML = sectionsHTML;
   }
-  
+
   function createPageloadContent() {
     let pageloadHTML = '';
 
     window.metrics.forEach(metric => {
       pageloadHTML += `
-              <div class="row-title" id="${metric}-section">${metric}</div>
-              <div class="row">
-                <div class="table-container" id="${metric}-table">
-                </div>
-              </div>
+	      <div class="row-title" id="${metric}-section">${metric}</div>
+	      <div class="row">
+		<div class="table-container" id="${metric}-table">
+		</div>
+	      </div>
 
-              <div class="row">
-                <div class="video-container" id="${metric}-video">
-                </div>
-              </div>
+	      <div class="row">
+		<div class="video-container" id="${metric}-video">
+		</div>
+	      </div>
 
-              <div class="row">
-                <div class="filmstrip-container" id="${metric}-filmstrip">
-                  <div id="firefox-filmstrip" class="filmstrip-row"></div>
-                  <div id="chrome-filmstrip" class="filmstrip-row"></div>
-                </div>
-              </div>
+	      <div class="row">
+		<div class="filmstrip-container" id="${metric}-filmstrip">
+		  <div id="firefox-filmstrip" class="filmstrip-row"></div>
+		  <div id="chrome-filmstrip" class="filmstrip-row"></div>
+		</div>
+	      </div>
 
-              <div class="row">
-                <div class="visual-progress-container" id="${metric}-SpeedIndex">
-                </div>
-              </div>
+	      <div class="row">
+		<div class="visual-progress-container" id="${metric}-SpeedIndex">
+		</div>
+	      </div>
 
-              <div class="row">
-                <div class="visual-progress-container" id="${metric}-PerceptualSpeedIndex">
-                </div>
-              </div>
+	      <div class="row">
+		<div class="visual-progress-container" id="${metric}-PerceptualSpeedIndex">
+		</div>
+	      </div>
 
-              <div class="row">
-                <div class="visual-progress-container" id="${metric}-ContentfulSpeedIndex">
-                </div>
-              </div>
-          `;
+	      <div class="row">
+		<div class="visual-progress-container" id="${metric}-ContentfulSpeedIndex">
+		</div>
+	      </div>
+	  `;
     });
     document.querySelector('.pageload-content').innerHTML = pageloadHTML;
   }
@@ -639,30 +641,30 @@ tr:hover {
     // Add horizontal scroll behavior to all filmstrip containers
     document.querySelectorAll('.filmstrip-container').forEach(container => {
       container.addEventListener('wheel', (event) => {
-        event.preventDefault();
-        container.scrollLeft += event.deltaY;
+	event.preventDefault();
+	container.scrollLeft += event.deltaY;
       });
     });
 
     const closeModal = document.getElementById("closeModal");
     const modal = document.getElementById("imageModal");
-  
+
     // Close modal when close button is clicked
     closeModal.onclick = function() {
       modal.style.display = "none";
     };
-  
+
     // Close modal when clicking outside the image
     modal.onclick = function(event) {
       if (event.target === modal) {
-        modal.style.display = "none";
+	modal.style.display = "none";
       }
     };
 
     // Close modal when pressing escape
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' || event.key === 'Esc') {
-        modal.style.display = "none";
+	modal.style.display = "none";
       }
     });
 
@@ -675,8 +677,9 @@ tr:hover {
     <div class="dropdown">
       <label for="platform-select">Platform:</label>
       <select id="platform-select" onchange="setPlatform(this.value)">
-        <option value="windows">Windows</option>
-        <option value="android">Android</option>
+	<option value="android">Android</option>
+	<option value="linux">Linux</option>
+	<option value="win11">Windows</option>
       </select>
     </div>
 
@@ -698,7 +701,7 @@ tr:hover {
 
   <script>
     var metrics = [
-      "amazon", 
+      "amazon",
     ];
 
     // Create sidebar sections
