@@ -79,13 +79,19 @@ def generate_video_filmstrip_interval(ivideo, intervaln):
         filmstrip_dict[timecodestr] = ofname
 
 
+# Assume ivideo.json file created during extraction.
+# 2024-11-11-android-chrome-amazon.mp4
+# 2024-11-11-android-chrome-amazon-video.json
 def serialize_data(ivideo, tdict, ofname):
-    vdict = {"video" : ivideo }
+    vdict = {}
+    ivideoj = ivideo.replace(".mp4", "-video.json")
+    with open(ivideoj, 'r') as vj:
+        vdata_dict = json.load(vj)
+        vdict["video"] = vdata_dict
     vdict["filmstrip"] = tdict
     with open(ofname, 'w') as f:
         json.dump(vdict, f, indent=2)
 
 #generate_video_filmstrip_partition_n(ifile, 12)
 generate_video_filmstrip_interval(ifile, 0.25)
-
 serialize_data(ifile, filmstrip_dict, filenamebase + "-filmstrip.json")

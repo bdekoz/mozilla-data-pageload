@@ -26,6 +26,6 @@ get_side_by_side() {
     rm before*.mp4
 }
 
-#get_side_by_side "android-amazon" "2024-11-15"
-get_side_by_side "linux-amazon" "2024-11-20"
-get_side_by_side "win11-amazon" "2024-11-20"
+get_side_by_side "android-amazon" "2024-11-11"
+#get_side_by_side "linux-amazon" "2024-11-20"
+#get_side_by_side "win11-amazon" "2024-11-20"
