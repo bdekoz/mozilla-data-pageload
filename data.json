@@ -3,7 +3,7 @@
   "test": "amazon",
   "platform": "android",
   "date": "2024-11-11",
-  "video_side_by_side": "2024-11-11-android-amazon-side-by-side.mp4",
+  "video_side_by_side": "android-amazon-side-by-side.mp4",
   "firefox": {
     "video": {
       "file": "2024-11-11-android-amazon-firefox.mp4",
@@ -373,7 +373,7 @@
   "test": "amazon",
   "platform": "linux",
   "date": "2024-11-20",
-  "video_side_by_side": "2024-11-20-linux-amazon-side-by-side.mp4",
+  "video_side_by_side": "linux-amazon-side-by-side.mp4",
   "firefox": {
     "video": {
       "file": "2024-11-20-linux-amazon-firefox.mp4",
@@ -721,7 +721,7 @@
   "test": "amazon",
   "platform": "win11",
   "date": "2024-11-20",
-  "video_side_by_side": "2024-11-20-win11-amazon-side-by-side.mp4",
+  "video_side_by_side": "win11-amazon-side-by-side.mp4",
   "firefox": {
     "video": {
       "file": "2024-11-20-win11-amazon-firefox.mp4",
