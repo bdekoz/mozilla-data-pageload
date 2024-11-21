@@ -502,10 +502,13 @@ tr:hover {
 	timestampLabel.textContent = `${timestamp} ms`;
 	timestampContainer.appendChild(timestampLabel);
 
+	let filmstripprefix = "filmstrip/";
+
 	// Create Firefox image element
 	const firefoxImage = document.createElement('img');
-	firefoxImage.src = filmstripData.firefox.filmstrip[timestamp];
-	firefoxImage.alt = `Firefox Frame at ${timestamp} ms`;
+	ffisrc = filmstripData.firefox.filmstrip[timestamp];
+	firefoxImage.src = filmstripprefix.concat(ffisrc);
+	firefoxImage.alt = `Firefox Frame at ${timestamp} sec`;
 	firefoxImage.className = 'filmstrip-image';
 	timestampContainer.appendChild(firefoxImage);
 
@@ -517,8 +520,9 @@ tr:hover {
 
 	// Create Chrome image element
 	const chromeImage = document.createElement('img');
-	chromeImage.src = filmstripData.chrome.filmstrip[timestamp];
-	chromeImage.alt = `Chrome Frame at ${timestamp} ms`;
+	cfisrc = filmstripData.chrome.filmstrip[timestamp];
+	chromeImage.src = filmstripprefix.concat(cfisrc);
+	chromeImage.alt = `Chrome Frame at ${timestamp} sec`;
 	chromeImage.className = 'filmstrip-image';
 	timestampContainer.appendChild(chromeImage);
 
